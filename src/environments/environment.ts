@@ -1,11 +1,12 @@
 export const environment = {
     production: false,
     firebaseConfig: {
-        apiKey: 'APIKEY',
-        authDomain: 'DEV-APP.firebaseapp.com',
-        databaseURL: 'https://DEV-APP.firebaseio.com',
-        projectId: 'DEV-APP',
-        storageBucket: 'DEV-APP.appspot.com',
-        messagingSenderId: '123456789'
+	apiKey: "AIzaSyBn1oYbZtsZpQ31902vpOyNIhEK7vUOyBY",
+    authDomain: "midtermexams-b4f22.firebaseapp.com",
+    databaseURL: "https://midtermexams-b4f22.firebaseio.com",
+    projectId: "midtermexams-b4f22",
+    storageBucket: "midtermexams-b4f22.appspot.com",
+    messagingSenderId: "44349734968"
+
     }
 };

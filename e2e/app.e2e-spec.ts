@@ -1,10 +1,10 @@
-import { FirestarterPage } from './app.po';
+import { FirebaseCrudPage } from './app.po';
 
-describe('firestarter App', () => {
-  let page: FirestarterPage;
+describe('firebase-crud App', function() {
+  let page: FirebaseCrudPage;
 
   beforeEach(() => {
-    page = new FirestarterPage();
+    page = new FirebaseCrudPage();
   });
 
   it('should display message saying app works', () => {

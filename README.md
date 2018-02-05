@@ -1,61 +1,54 @@
-[![Slack](https://firebasestorage.googleapis.com/v0/b/firestarter-96e46.appspot.com/o/assets%2Fslack-badge.svg?alt=media&token=3e68acef-3e00-4925-9710-e11cee5923e4)](https://join.slack.com/angularfirebase/shared_invite/MjA2NTgxMTI0MTk2LTE0OTg4NTQ4MDAtMjhhZDIzMjc0Mg)
+# FirebaseCrud
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+## This is the code for a tutorial series that can be found on [progblog.io](https://progblog.io)
 
-# FireStarter - Angular + Firebase Progressive Web App
+In this tutorial we start with a blank app generated using Angular CLI. We use [Firebase](https://firebase.google.com/) to make the next steps EASY. First, we use Firebase's authentication to add Google Login. We later extend that to also use email/password. We then use the Firebase Realtime Database to make a simple chat app. This project is my attempt to show how easy Firebase makes seemingly arduous tasks.
 
-FireStarter is a basic Angular PWA powered by Firebase. It can serve as a foundation to learn this stack and roll out more complex features.
+### Sections
 
-- [Live Demo](https://firestarter-96e46.firebaseapp.com/)
-- [Lessons and Screencasts](https://angularfirebase.com)
-- [Join the Slack Team](https://join.slack.com/t/angularfirebase/shared_invite/enQtMjU2OTU5OTMyODM3LWU4YTZiMGFhZjJhYmEwYzI1MWFmYTgyMWRmOTI5NWZjYWE3NTMwZjFmNWMwZGI1MmMzODQ3OTFlZjFkMjc5N2Y)
+[**Part 1:**](https://progblog.io/Angular-2-Firebase-Tutorial-Part-1-Create-a-Firebase-3-CRUD-app-with-Angular-CLI/) Installing necessary components. Generating a blank app through Angular CLI. Add Bootstrap for styling. Create Firebase account. Install and setup Firebase through NPM.
 
-## Features
+The code for **part 1** can be found [here](https://github.com/HuddleHouse/firebase-crud/tree/firebase-crud-part-1).
 
-- Angular 5.0
-- 100 PWA Lighthouse Score
-- Firebase Auth with Custom Data in Firestore
-- CRUD Demos (Firestore & Realtime DB)
-- File Uploads to Firebase Storage Demo
+[**Part 2:**](https://progblog.io/Angular-2-Firebase-Tutorial-Part-2-Adding-Authentication/) Add user login through their Google account. Create the Login Page and Home Page Components. Add asynchronous monitoring of the logged in status. Redirect to the Home Page when logged in and to the Login Page when the user logs out.
 
+The code for **part 2** can be found [here](https://github.com/HuddleHouse/firebase-crud/tree/firebase-crud-part-2).
 
-## Usage
+[**Part 3:**](https://progblog.io/Angular-2-Firebase-Tutorial-Part-3-Adding-the-Realtime-Database/) We will add a simple chat app that stores messages into a Firebase Realtime Database.
 
-Create an account at https://firebase.google.com/
+The code for **part 3** can be found [here](https://github.com/HuddleHouse/firebase-crud/tree/firebase-crud-part-3).
 
-- `git clone https://github.com/codediodeio/angular-firestarter.git firestarter`
-- `cd firestarter`
-- `npm install`
+[**Part 4:**](https://progblog.io/Angular-2-Firebase-Tutorial-Part-4-Adding-Email-Password-Authentication/) We add Email/Password user authentication using Firebase.
 
-Create the environment files below in `src/environments/`.
+The code for **part 4** can be found [here](https://github.com/HuddleHouse/firebase-crud/tree/firebase-crud-part-4).
 
-#### environment.ts
-```typescript
-export const environment = {
-    production: false,
-    firebaseConfig: {
-        apiKey: 'APIKEY',
-        authDomain: 'DEV-APP.firebaseapp.com',
-        databaseURL: 'https://DEV-APP.firebaseio.com',
-        projectId: 'DEV-APP',
-        storageBucket: 'DEV-APP.appspot.com',
-        messagingSenderId: '123456789'
-    }
-};
-```
-#### environment.prod.ts
-```typescript
-export const environment = {
-    production: true,
-    firebaseConfig: {
-        // same as above, or use a different firebase project to isolate environments
-    }
-};
-```
+**Part 5:** COMING SOON Adding the ability for a user to edit or delete any messages that they have sent.
 
-And finally `ng serve`
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Apps Using FireStarter in Production
+## Code scaffolding
 
-- [ArtiFilter](https://artifilter.com) - Neural Art Generator
-- [FlashLawyer](https://flashlawyer.com) - Legal Document Builder and Chatbot
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+
+## Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+
+## Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+## Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
+
+## Deploying to Github Pages
+
+Run `ng github-pages:deploy` to deploy to Github Pages.
+
+## Further help
+
+To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# firebase-crud
